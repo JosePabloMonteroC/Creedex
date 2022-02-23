@@ -1,0 +1,8 @@
+guessIt.exe: guessIt.o funciones.o
+	gcc guessIt.o funciones.o -o guessIt.exe
+
+guessIt.o: guessIt.c
+	gcc -c guessIt.c
+
+funciones.o: funciones.c
+	gcc -c funciones.c
